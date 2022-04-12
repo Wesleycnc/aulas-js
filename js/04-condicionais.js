@@ -33,18 +33,22 @@ console.log(`Média: ${media}`);
 
 let situacao; // underfined (indefinida)
 
-if(media >=7 ){
-    console.log("aprovado");
+let faltas = 20;
+console.log(`Faltas: ${faltas}`);
+
+/* if(media >=7 ){ */
+if(media >= 7 && faltas < 15 ){
+    situacao = "aprovado";
 
 } else {
-    console.log("reprovado");
+    situacao = "reprovado";
 }
 
 console.log(situacao);
 
 // Exemplo 3: condicional ENCADEADA (if, ELSE if, ELSE)
 let desempenho;
-if(meidia <3){
+if(media <3){
     desempenho = "péssimo";
 } else if(media <5){
     desempenho = "ruim";
