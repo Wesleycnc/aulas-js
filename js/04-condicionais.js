@@ -30,11 +30,12 @@ let media = (nota1 + nota2) / 2;
 console.log(`Aluno: ${aluno}`);
 console.log(`Notas: ${nota1} e ${nota2}`);
 console.log(`Média: ${media}`);
+let faltas = 20;
+console.log(`Faltas: ${faltas}`);
 
 let situacao; // underfined (indefinida)
 
-let faltas = 20;
-console.log(`Faltas: ${faltas}`);
+
 
 /* if(media >=7 ){ */
 if(media >= 7 && faltas < 15 ){
