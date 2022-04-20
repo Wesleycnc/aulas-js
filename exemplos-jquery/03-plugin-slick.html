@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plugin Slick Slider</title>
+<link rel="stylesheet" href="slick/slick.css">
+<link rel="stylesheet" href="slick/slick-theme.css">
 <style>
     body { background-color: lightblue; }  
     #slider {
@@ -20,7 +22,7 @@
     <p><i>Informações gerais:</i> <a href="http://kenwheeler.github.io/slick/" target="_blank">Slick</a></p>
     <hr>
     <div id="slider">
-        <div>
+        <div >
             <img src="imagens/dedos.jpg" alt="">
             <p>São dedos!</p>
         </div>
@@ -35,6 +37,20 @@
     </div>
 </div>    
 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="slick/slick.min.js"></script>
+
+<script>
+    
+$(document).ready(function(){
+    $('#slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+     
+     });
+});
+
+</script>
 
 </body>
     
